@@ -10,7 +10,7 @@ describe "Scramble tests" do
     expect(scramble('scriptjavx', 'javascript')).to eq(false)
   end  
   
-  xit "Performance test" do
+  it "Performance test" do
     s1 = "abcdefghijklmnopqrstuvwxyz" * 100_000
     s2 = "zyxcba" * 90_000
     expect(scramble(s1, s2)).to eq(true)
